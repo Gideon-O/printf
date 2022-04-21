@@ -76,11 +76,11 @@ int switch_statement(const char *format, int i, va_list ap)
 			break;
 		case 'i':
 			integer = va_arg(ap, int);
-			num = itoa(integer) - 2;
+			num = itoa(integer);
 			break;
 		case 'd':
 			decimal = va_arg(ap, int);
-			num = itoa(decimal) - 2;
+			num = itoa(decimal);
 			break;
 		case '%':
 			_putchar('%');
